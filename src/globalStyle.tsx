@@ -8,6 +8,7 @@ const GlobalStyle = () => {
                     margin: 0;
                     padding: 0;
                     background-color: #333333;
+                    color: white;
                     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
                 }
             `} 

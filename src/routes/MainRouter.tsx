@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import {
-    MainContainer
+    MainContainer,
+    WriteContainer
 } from "../containers";
 
 const MainRouter = () => {
@@ -15,7 +16,8 @@ const SubRouter = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<MainContainer />}></Route>
+        <Route path="/" element={<MainContainer />} />
+        <Route path="/write" element={<WriteContainer />} />
       </Routes>
     </>
   );
