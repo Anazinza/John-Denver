@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
 
 export const MainContainer = styled.section`
     display: flex;
@@ -16,8 +17,29 @@ export const SwitchContainer = styled.div`
 export const OffContainer = styled.div`
 `
 
+const slideUp = keyframes`
+    from {
+        margin-top: 20px;
+    }
+
+    50% {
+        margin-top: 50px;
+    }
+
+    to {
+        margin-top: 20px;
+    }
+`
+
 export const Inner = styled.div`
-    margin-top: 60px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    animation-duration: 2s;
+    animation-name: ${slideUp};
+    animation-iteration-count: infinite;
 `
 
 export const Text = styled.label`
