@@ -56,4 +56,7 @@ export const JungsContainer = styled.div`
     row-gap: 50px;
     height: 500px;
     overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+  }
 `
