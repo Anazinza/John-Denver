@@ -10,9 +10,9 @@ interface propsType {
 const Jung = ({ id, title, emotion, content }: propsType) => {
     return (
         <S.JungContainer>
-            <S.Id>{id}.</S.Id>
-            <S.Title>{title}</S.Title>
-            <S.Emotion>{emotion}</S.Emotion>
+            <S.Id className="id">{id}.</S.Id>
+            <S.Title className="name">{title}</S.Title>
+            <S.Emotion className="emo">{emotion}</S.Emotion>
         </S.JungContainer>
     )
 }

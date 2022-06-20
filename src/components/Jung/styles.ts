@@ -9,6 +9,18 @@ export const JungContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+        & .id {
+            font-size: 55px;
+        }
+        & .name {
+            font-size: 70px;
+        }
+        & .emo {
+            font-size: 40px;
+        }
+    }
 `
 
 export const Id = styled.label`
