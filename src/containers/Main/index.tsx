@@ -11,7 +11,7 @@ const MainContainer = () => {
 
     return (
         <S.MainContainer>
-            <S.SwitchContainer>
+            <S.Outer>
                 <Switch
                     onChange={() => setOnOff(onOff => !onOff)}
                     checked={onOff}
@@ -27,6 +27,7 @@ const MainContainer = () => {
                             {Jungs.map((jung) => (
                                 <Jung
                                     key={jung.id}
+                                    id={jung.id}
                                     title={jung.title}
                                     emotion={jung.emotion}
                                     content={jung.content} />
@@ -41,7 +42,7 @@ const MainContainer = () => {
                             <S.Text>스위치를 키고 감정을 봐요</S.Text>
                         </S.Inner>
                     </S.OffContainer>}
-            </S.SwitchContainer>
+            </S.Outer>
         </S.MainContainer>
     )
 }

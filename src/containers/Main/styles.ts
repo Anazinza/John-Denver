@@ -7,7 +7,7 @@ export const MainContainer = styled.section`
     width: 100vw;
 `
 
-export const SwitchContainer = styled.div`
+export const Outer = styled.div`
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -48,6 +48,12 @@ export const Text = styled.label`
 
 export const OnContainer = styled.div`
 `
-export const JungsContainer = styled.div`
 
+export const JungsContainer = styled.div`
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    height: 500px;
+    overflow-y: scroll;
 `
