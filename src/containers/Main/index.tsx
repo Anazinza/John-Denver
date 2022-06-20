@@ -3,6 +3,9 @@ import Switch from "react-switch";
 import * as S from "./styles"
 import { MdKeyboardArrowUp } from "react-icons/md";
 
+import { Jungs } from "../../constant";
+import Jung from "../../components/Jung";
+
 const MainContainer = () => {
     const [onOff, setOnOff] = useState<boolean>(false)
 
@@ -20,6 +23,15 @@ const MainContainer = () => {
                     offHandleColor="#6B0AA6" />
                 {onOff ?
                     <S.OnContainer>
+                        <S.JungsContainer>
+                            {Jungs.map((jung) => (
+                                <Jung
+                                    key={jung.id}
+                                    title={jung.title}
+                                    emotion={jung.emotion}
+                                    content={jung.content} />
+                            ))}
+                        </S.JungsContainer>
                     </S.OnContainer>
                     :
                     <S.OffContainer>

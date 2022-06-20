@@ -1,4 +1,4 @@
-export const Jung = [
+export const Jungs = [
     {
         id: 1,
         title: "title1",

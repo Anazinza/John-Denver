@@ -48,3 +48,6 @@ export const Text = styled.label`
 
 export const OnContainer = styled.div`
 `
+export const JungsContainer = styled.div`
+
+`
