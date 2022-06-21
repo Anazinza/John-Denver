@@ -36,3 +36,11 @@ export const Jungs = [
         content: "content6"
     },
 ]
+
+export const Dates = Array.from(new Array(5).keys()).map(value => (
+        {
+            id: value,
+            created_at: `2022-02-${value < 9 ? `0${value+1}` : value+1}`
+        }
+    )
+) 

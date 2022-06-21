@@ -50,8 +50,11 @@ export const CdContainer = styled.div`
     transform: translate(-50%);
     display: flex;
     justify-content: center;
+    align-items: center;
 `
 
 export const Cds = styled.div`
-    
+    display: flex;
+    flex-direction: row;
+
 `
