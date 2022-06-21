@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Dates } from "../../../constant";
 import Cd from "../../../components/Cd";
 import CdPlayer from "../../../assets/img/cd_player.svg"
+import { generateColor } from "../../../utils/generateColor"
 
 const CURRENT_YEAR = new Date().getFullYear()
 const CURRENT_MONTH = new Date().getMonth()
@@ -11,6 +12,14 @@ const CURRENT_MONTH = new Date().getMonth()
 const OffContainer = () => {
     const [year, setYear] = useState<number>(CURRENT_YEAR)
     const [month, setMonth] = useState<number>(CURRENT_MONTH + 1)
+
+    const onMonthNext = () => {
+        if (year !== CURRENT_YEAR) {
+            if (month <= CURRENT_MONTH) {
+                setMonth(month => month + 1)
+            }
+        }
+    }
 
     return (
         <S.OffContainer>
@@ -43,12 +52,12 @@ const OffContainer = () => {
                     <MdOutlineArrowRight
                         size={100}
                         style={{ cursor: "pointer" }}
-                        onClick={() => month < 12 && setMonth(month => month + 1)} />
+                        onClick={onMonthNext} />
                 </S.MonthContainer>
             </S.Outer>
             <S.CdContainer>
                 {Dates.map((date) => (
-                    <Cd key={date.id} created_at={date.created_at} />
+                    <Cd key={date.id} created_at={date.created_at} backgroundColor={generateColor()} />
                 ))}
             </S.CdContainer>
         </S.OffContainer>

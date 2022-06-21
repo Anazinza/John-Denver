@@ -63,11 +63,8 @@ export const CdContainer = styled.div`
     width: 100%;
     height: 460px;
     bottom: -200px;
-    left: 50%;
-    transform: translate(-50%);
     display: flex;
     align-items: flex-end;
-    display: flex;
     flex-direction: row;
     overflow-x: scroll;
 `
