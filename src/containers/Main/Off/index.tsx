@@ -6,7 +6,7 @@ import Cd from "../../../components/Cd";
 
 const CURRENT_YEAR = new Date().getFullYear()
 
-const generateColor = (donutColors: string[]) => {
+const generateColor = () => {
     const colors = [
         "#FF%s8C",
         "#FF8C%s",
@@ -27,7 +27,6 @@ const generateColor = (donutColors: string[]) => {
 
 const OffContainer = () => {
     const [year, setYear] = useState<number>(CURRENT_YEAR)
-    const donutColors = [] as Array<string>
 
     const onNext = () => {
         year < CURRENT_YEAR && setYear(year => year + 1)
@@ -58,7 +57,7 @@ const OffContainer = () => {
                 </S.YearContainer>
                 <S.Cds>
                     {Dates.map(() => (
-                        <Cd backgroundColor={generateColor(donutColors)} />
+                        <Cd backgroundColor={generateColor()} />
                     ))}
                 </S.Cds>
             </S.CdContainer>
