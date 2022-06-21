@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
 
 export const OffContainer = styled.div`
+    width: 100vw;
 `
 
 const slideUp = keyframes`
@@ -18,7 +19,7 @@ const slideUp = keyframes`
     }
 `
 
-export const Inner = styled.div`
+export const SwitchContainer = styled.div`
     position: relative;
     margin-top: 40px;
     display: flex;
@@ -38,25 +39,29 @@ export const YearContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 70%;
 `
 
 export const CdContainer = styled.div`
     background-color: #676767;
     position: fixed;
     width: 100%;
-    height: 150px;
+    height: 50px;
     bottom: 0px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
-    justify-content: center;
     align-items: center;
 `
 
 export const Cds = styled.div`
     display: flex;
     flex-direction: row;
-    /* width: 100%; */
     overflow-x: scroll;
+`
+
+export const Inner = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 `
