@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
+import { startTransition } from "react";
 
 export const OffContainer = styled.div`
     width: 100vw;
@@ -35,14 +36,29 @@ export const Text = styled.label<{fontSize: string}>`
     font-size: ${props => props.fontSize};
 `
 
+export const Outer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+`
+
 export const YearContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
+    top: -150px;
+`
+
+export const MonthContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: -150px;
 `
 
 export const CdContainer = styled.div`
-    /* background-color: #676767; */
     position: fixed;
     width: 100%;
     height: 460px;
@@ -56,10 +72,11 @@ export const CdContainer = styled.div`
     overflow-x: scroll;
 `
 
-
 export const Inner = styled.div`
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+`
+
+export const CdPlayer = styled.img`
 `
