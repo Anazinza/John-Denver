@@ -38,6 +38,7 @@ export const YearContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 70%;
 `
 
 export const CdContainer = styled.div`
@@ -56,5 +57,6 @@ export const CdContainer = styled.div`
 export const Cds = styled.div`
     display: flex;
     flex-direction: row;
-
+    /* width: 100%; */
+    overflow-x: scroll;
 `

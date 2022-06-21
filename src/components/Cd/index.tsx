@@ -1,13 +1,16 @@
 import * as S from "./styled"
+import { generateColor } from "../../utils/generateColor"
 
 interface PropsType {
-    backgroundColor: string;
+    created_at: string;
 }
 
-const Cd = ({ backgroundColor }: PropsType) => {
+const Cd = ({ created_at }: PropsType) => {
     return (
         <S.CdContainer>
-            <S.Cd backgroundColor={backgroundColor} />
+            <S.Cd backgroundColor={generateColor()}>
+                {created_at}
+            </S.Cd>
         </S.CdContainer>
     )
 }
