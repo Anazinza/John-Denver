@@ -43,6 +43,9 @@ const MainContainer = () => {
                         </S.Inner>
                     </S.OffContainer>}
             </S.Outer>
+            <S.RangeContainer>
+                <S.Range type="range" />
+            </S.RangeContainer>
         </S.MainContainer>
     )
 }

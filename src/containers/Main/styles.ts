@@ -60,3 +60,17 @@ export const JungsContainer = styled.div`
         display: none;
   }
 `
+
+export const RangeContainer = styled.section`
+    position: fixed;
+    right: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const Range = styled.input`
+    -webkit-appearance: slider-vertical;
+    height: 80%;
+`
