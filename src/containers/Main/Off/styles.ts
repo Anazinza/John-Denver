@@ -6,7 +6,7 @@ export const OffContainer = styled.div`
 
 const slideUp = keyframes`
     from {
-        bottom: 10px;
+        bottom: 15px;
     }
 
     50% {
@@ -14,7 +14,7 @@ const slideUp = keyframes`
     }
 
     to {
-        bottom: 10px;
+        bottom: 15px;
     }
 `
 
@@ -30,12 +30,28 @@ export const Inner = styled.div`
     animation-iteration-count: infinite;
 `
 
-export const Text = styled.label`
-    font-size: 23px;
+export const Text = styled.label<{fontSize: string}>`
+    font-size: ${props => props.fontSize};
 `
 
 export const YearContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+`
+
+export const CdContainer = styled.div`
+    background-color: #676767;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+`
+
+export const Cds = styled.div`
+    
 `
