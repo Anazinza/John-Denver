@@ -39,11 +39,9 @@ const OffContainer = () => {
                 </S.YearContainer>
             </S.Inner>
             <S.CdContainer>
-                <S.Cds>
-                    {Dates.map((date) => (
-                        <Cd key={date.id} created_at={date.created_at} />
-                    ))}
-                </S.Cds>
+                {Dates.map((date) => (
+                    <Cd key={date.id} created_at={date.created_at} />
+                ))}
             </S.CdContainer>
         </S.OffContainer>
     )

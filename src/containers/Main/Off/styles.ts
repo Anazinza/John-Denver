@@ -42,22 +42,20 @@ export const YearContainer = styled.div`
 `
 
 export const CdContainer = styled.div`
-    background-color: #676767;
+    /* background-color: #676767; */
     position: fixed;
     width: 100%;
-    height: 50px;
-    bottom: 0px;
+    height: 460px;
+    bottom: -200px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
-    align-items: center;
-`
-
-export const Cds = styled.div`
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
 `
+
 
 export const Inner = styled.div`
     width: 100%;
