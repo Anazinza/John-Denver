@@ -58,7 +58,7 @@ export const JungsContainer = styled.div`
     overflow-y: scroll;
     &::-webkit-scrollbar {
         display: none;
-  }
+  };
 `
 
 export const RangeContainer = styled.section`
@@ -68,9 +68,26 @@ export const RangeContainer = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    row-gap: 18px;
 `
 
 export const Range = styled.input`
     -webkit-appearance: slider-vertical;
     height: 80%;
+
+    &::-webkit-slider-runnable-track {
+        background-color: white;
+    };
+
+    &::-webkit-slider-thumb {
+        background-color: #333333;
+        cursor: pointer;
+    };
+`
+
+export const YearContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 `
