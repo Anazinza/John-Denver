@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { keyframes } from "@emotion/react";
 
 export const MainContainer = styled.section`
     display: flex;
@@ -12,82 +11,4 @@ export const Outer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-`
-
-export const OffContainer = styled.div`
-`
-
-const slideUp = keyframes`
-    from {
-        margin-top: 20px;
-    }
-
-    50% {
-        margin-top: 50px;
-    }
-
-    to {
-        margin-top: 20px;
-    }
-`
-
-export const Inner = styled.div`
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    animation-duration: 2s;
-    animation-name: ${slideUp};
-    animation-iteration-count: infinite;
-`
-
-export const Text = styled.label`
-    font-size: 23px;
-`
-
-export const OnContainer = styled.div`
-`
-
-export const JungsContainer = styled.div`
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-    height: 500px;
-    overflow-y: scroll;
-    &::-webkit-scrollbar {
-        display: none;
-  };
-`
-
-export const RangeContainer = styled.section`
-    position: fixed;
-    right: 40px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 18px;
-`
-
-export const Range = styled.input`
-    -webkit-appearance: slider-vertical;
-    height: 80%;
-
-    &::-webkit-slider-runnable-track {
-        background-color: white;
-    };
-
-    &::-webkit-slider-thumb {
-        background-color: #333333;
-        cursor: pointer;
-    };
-`
-
-export const YearContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 `
