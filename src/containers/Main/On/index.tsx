@@ -15,6 +15,9 @@ const OnContainer = () => {
                         content={jung.content} />
                 ))}
             </S.JungsContainer>
+            <S.ButtonContainer>
+                <S.WriteBtn>융 쓰러가기</S.WriteBtn>
+            </S.ButtonContainer>
         </S.OnContainer>
     )
 }

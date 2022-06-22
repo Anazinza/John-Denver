@@ -15,7 +15,7 @@ const splitDate = (date: string) => {
 
 const Cd = ({ created_at, backgroundColor, animation = false, hover = true }: PropsType) => {
     const setPlayedCD = useSetRecoilState(playedCDState)
-    const dateList: string[] | undefined = splitDate(created_at)
+    // const dateList: string[] | undefined = splitDate(created_at)
 
     const onPlayCD = () => {
         setPlayedCD({
@@ -32,15 +32,11 @@ const Cd = ({ created_at, backgroundColor, animation = false, hover = true }: Pr
                 animation={animation}
                 hover={hover}>
                 <S.CreatedAt>
+
                     <S.Char1>
-                        {dateList && dateList[0]}
+                        {/* {dateList && dateList} */}
+                        {created_at}
                     </S.Char1>
-                    <S.Char2>
-                        {dateList && dateList[1]}
-                    </S.Char2>
-                    <S.Char3>
-                        {dateList && dateList[2]}
-                    </S.Char3>
                 </S.CreatedAt>
             </S.Cd>
         </S.CdContainer>

@@ -40,7 +40,7 @@ export const YearContainer = styled.div`
     flex-direction: row;
     align-items: center;
     position: relative;
-    top: -150px;
+    top: -70px;
 `
 
 export const MonthContainer = styled.div`
@@ -48,7 +48,7 @@ export const MonthContainer = styled.div`
     flex-direction: row;
     align-items: center;
     position: relative;
-    top: -150px;
+    top: -70px;
 `
 
 export const CdContainer = styled.div`
