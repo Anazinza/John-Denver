@@ -8,7 +8,7 @@ interface playedCDType {
 export const playedCDState = atom({
     key: "playedCDState",
     default: {
-        created_at: "0-0-0",
+        created_at: "",
         backgroundColor: "#D9D9D9"
     } as playedCDType
 })

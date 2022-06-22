@@ -36,7 +36,6 @@ export const Cd = styled.div<CdPropsType>`
         &:hover {
             animation-duration:5s;
         }
-        
     ` }
     
 `
