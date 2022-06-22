@@ -7,15 +7,12 @@ interface PropsType {
     backgroundColor: string;
     animation?: boolean;
     hover?: boolean;
+    date?: boolean;
 }
 
-const splitDate = (date: string) => {
-    if (date) return date.split("-")
-}
-
-const Cd = ({ created_at, backgroundColor, animation = false, hover = true }: PropsType) => {
+const Cd = ({ created_at, backgroundColor, animation = false, hover = true, date = true }: PropsType) => {
     const setPlayedCD = useSetRecoilState(playedCDState)
-    // const dateList: string[] | undefined = splitDate(created_at)
+    const dateList: string[] = created_at.split("")
 
     const onPlayCD = () => {
         setPlayedCD({
@@ -32,11 +29,7 @@ const Cd = ({ created_at, backgroundColor, animation = false, hover = true }: Pr
                 animation={animation}
                 hover={hover}>
                 <S.CreatedAt>
-
-                    <S.Char1>
-                        {/* {dateList && dateList} */}
-                        {created_at}
-                    </S.Char1>
+                    {date && dateList}
                 </S.CreatedAt>
             </S.Cd>
         </S.CdContainer>

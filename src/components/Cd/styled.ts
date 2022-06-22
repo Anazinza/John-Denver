@@ -31,7 +31,7 @@ export const Cd = styled.div<CdPropsType>`
     `}
 
     ${props => props.animation && css`
-        animation: ${slowSpin} .2s linear infinite; 
+        animation: ${slowSpin} .001s linear infinite; 
         
         &:hover {
             animation-duration:5s;
@@ -45,20 +45,13 @@ export const CreatedAt = styled.div`
     color: black;
     position: absolute;
     bottom: 100px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 370px;
+    /* left: 50%; */
+    transform: rotate(-50deg);
+    width: 200px;
     font-size: 23px;
     display:flex;
     justify-content: center;
     align-items: center;
     column-gap: 20px;
-`
-
-export const Char1 = styled.span`
-`
-export const Char2 = styled.span`
-
-`
-export const Char3 = styled.span`
+    
 `
