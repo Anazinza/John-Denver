@@ -2,20 +2,17 @@ import * as S from "./styled"
 import { useSetRecoilState } from "recoil";
 import { playedCDState } from "../../utils/recoil";
 
-import { useState } from "react";
-
 interface PropsType {
     created_at: string;
     backgroundColor: string;
+    animation?: boolean;
+    hover?: boolean;
 }
 
-const Cd = ({ created_at, backgroundColor }: PropsType) => {
-    const [click, setClick] = useState<boolean>(false)
+const Cd = ({ created_at, backgroundColor, animation = false, hover = true }: PropsType) => {
     const setPlayedCD = useSetRecoilState(playedCDState)
 
     const onPlayCD = () => {
-        setClick(true)
-
         setPlayedCD({
             created_at: created_at,
             backgroundColor: backgroundColor
@@ -27,7 +24,8 @@ const Cd = ({ created_at, backgroundColor }: PropsType) => {
             <S.Cd
                 backgroundColor={backgroundColor}
                 onClick={onPlayCD}
-                click={click}>
+                animation={animation}
+                hover={hover}>
                 <legend>
                     {created_at}
                 </legend>

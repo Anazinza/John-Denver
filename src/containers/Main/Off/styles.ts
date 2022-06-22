@@ -39,16 +39,16 @@ export const YearContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* position: relative; */
-    /* top: -150px; */
+    position: relative;
+    top: -150px;
 `
 
 export const MonthContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* position: relative; */
-    /* top: -150px; */
+    position: relative;
+    top: -150px;
 `
 
 export const CdContainer = styled.div`

@@ -6,7 +6,8 @@ export const CdContainer = styled.div`
 
 interface CdPropsType {
     backgroundColor: string;
-    click: boolean;
+    animation: boolean;
+    hover: boolean;
 }
 
 const slowSpin = keyframes`
@@ -23,21 +24,19 @@ export const Cd = styled.div<CdPropsType>`
     transition: bottom .3s;
     bottom: 0px;
 
-    &:hover {
-        bottom: 70px;
-    }
-/* 
-    ${props => props.click && css`
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);    
+    ${props => props.hover && css`
+        &:hover {
+            bottom: 70px;
+        }
+    `}
+
+    ${props => props.animation && css`
         animation: ${slowSpin} .2s linear infinite; 
         
         &:hover {
             animation-duration:5s;
         }
         
-    ` } */
+    ` }
     
 `

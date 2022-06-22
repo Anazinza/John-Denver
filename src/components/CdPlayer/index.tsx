@@ -13,7 +13,9 @@ const CdPlayer = () => {
             <S.CdContainer>
                 <Cd
                     created_at={playedCD.created_at}
-                    backgroundColor={playedCD.backgroundColor} />
+                    backgroundColor={playedCD.backgroundColor}
+                    animation={true}
+                    hover={false} />
             </S.CdContainer>
         </S.CdPlayerContainer>
     )
