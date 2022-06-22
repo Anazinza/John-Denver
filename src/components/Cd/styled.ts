@@ -51,17 +51,14 @@ export const CreatedAt = styled.div`
     font-size: 23px;
     display:flex;
     justify-content: center;
+    align-items: center;
+    column-gap: 20px;
 `
 
 export const Char1 = styled.span`
-
-
-
 `
 export const Char2 = styled.span`
-  
 
 `
 export const Char3 = styled.span`
-
 `
