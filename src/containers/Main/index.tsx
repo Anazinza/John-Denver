@@ -1,14 +1,16 @@
 import { useState } from "react";
 import Switch from "react-switch";
 import * as S from "./styles"
-import { MdKeyboardArrowUp } from "react-icons/md";
+import OnContainer from "./On";
+import OffContainer from "./Off";
+
 
 const MainContainer = () => {
     const [onOff, setOnOff] = useState<boolean>(false)
 
     return (
         <S.MainContainer>
-            <S.SwitchContainer>
+            <S.Outer>
                 <Switch
                     onChange={() => setOnOff(onOff => !onOff)}
                     checked={onOff}
@@ -19,17 +21,10 @@ const MainContainer = () => {
                     onHandleColor="#FBF799"
                     offHandleColor="#6B0AA6" />
                 {onOff ?
-                    <S.OnContainer>
-                    </S.OnContainer>
+                    <OnContainer />
                     :
-                    <S.OffContainer>
-                        <S.Inner>
-                            <MdKeyboardArrowUp
-                                size={50} />
-                            <S.Text>스위치를 키고 감정을 봐요</S.Text>
-                        </S.Inner>
-                    </S.OffContainer>}
-            </S.SwitchContainer>
+                    <OffContainer />}
+            </S.Outer>
         </S.MainContainer>
     )
 }
