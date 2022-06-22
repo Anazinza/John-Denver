@@ -1,23 +1,16 @@
 import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
-import { startTransition } from "react";
 
 export const OffContainer = styled.div`
     width: 100vw;
 `
 
 const slideUp = keyframes`
-    from {
-        bottom: 15px;
-    }
+    from { bottom: 15px; }
 
-    50% {
-        bottom: 40px;
-    }
+    50% { bottom: 40px; }
 
-    to {
-        bottom: 15px;
-    }
+    to { bottom: 15px; }
 `
 
 export const SwitchContainer = styled.div`
@@ -32,7 +25,7 @@ export const SwitchContainer = styled.div`
     animation-iteration-count: infinite;
 `
 
-export const Text = styled.label<{fontSize: string}>`
+export const Text = styled.label<{ fontSize: string }>`
     font-size: ${props => props.fontSize};
 `
 
@@ -46,16 +39,16 @@ export const YearContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: relative;
-    top: -150px;
+    /* position: relative; */
+    /* top: -150px; */
 `
 
 export const MonthContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: relative;
-    top: -150px;
+    /* position: relative; */
+    /* top: -150px; */
 `
 
 export const CdContainer = styled.div`
@@ -73,7 +66,5 @@ export const Inner = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-`
-
-export const CdPlayer = styled.img`
+    align-items: center;
 `

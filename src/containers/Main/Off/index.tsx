@@ -3,8 +3,8 @@ import { MdKeyboardArrowUp, MdOutlineArrowLeft, MdOutlineArrowRight } from "reac
 import { useState } from "react";
 import { Dates } from "../../../constant";
 import Cd from "../../../components/Cd";
-import CdPlayer from "../../../assets/img/cd_player.svg"
 import { generateColor } from "../../../utils/generateColor"
+import CdPlayer from "../../../components/CdPlayer";
 
 const CURRENT_YEAR = new Date().getFullYear()
 const CURRENT_MONTH = new Date().getMonth()
@@ -31,7 +31,7 @@ const OffContainer = () => {
                 <S.Text fontSize="23px">스위치를 키고 감정을 봐요</S.Text>
             </S.SwitchContainer>
             <S.Inner>
-                <S.CdPlayer src={CdPlayer} alt="cd player" />
+                <CdPlayer />
             </S.Inner>
             <S.Outer>
                 <S.YearContainer>

@@ -1,12 +1,15 @@
 import React from 'react';
+import { RecoilRoot } from 'recoil';
 import GlobalStyle from './globalStyle';
 import RootRouter from './routes/RootRoute';
 
 function App() {
   return (
     <div>
-      <RootRouter />
-      <GlobalStyle />
+      <RecoilRoot>
+        <RootRouter />
+        <GlobalStyle />
+      </RecoilRoot>
     </div>
   );
 }
