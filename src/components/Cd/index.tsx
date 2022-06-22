@@ -1,6 +1,6 @@
 import * as S from "./styled"
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface PropsType {
     created_at: string;
@@ -9,10 +9,6 @@ interface PropsType {
 
 const Cd = ({ created_at, backgroundColor }: PropsType) => {
     const [click, setClick] = useState<boolean>(false)
-
-    useEffect(() => {
-        setClick(false)
-    }, [])
 
     return (
         <S.CdContainer>

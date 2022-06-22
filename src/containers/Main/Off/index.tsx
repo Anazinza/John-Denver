@@ -14,8 +14,11 @@ const OffContainer = () => {
     const [month, setMonth] = useState<number>(CURRENT_MONTH + 1)
 
     const onMonthNext = () => {
-        if (year !== CURRENT_YEAR) {
-            if (month <= CURRENT_MONTH) {
+        if (year === CURRENT_YEAR && month > CURRENT_MONTH) {
+            return
+        }
+        else {
+            if (month < 12) {
                 setMonth(month => month + 1)
             }
         }

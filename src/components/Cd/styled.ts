@@ -23,10 +23,11 @@ export const Cd = styled.div<CdPropsType>`
         bottom: 70px;
     }
 
-    ${ props => props.click && css`
+    ${props => props.click && css`
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     ` }
+    
 `
