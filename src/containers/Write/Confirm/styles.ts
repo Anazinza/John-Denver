@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
 
-const moveToTop = keyframes`
-    from { transform: translateY(100%); opacity:0 }
+const toVisible = keyframes`
+    from { opacity:0 }
     to {opacity: 1}
 `
 
@@ -13,7 +13,7 @@ export const ConfirmContainer = styled.section`
     margin-top: 200px;
     
 
-    animation: ${moveToTop} 1s linear;
+    animation: ${toVisible} 1s linear;
 `
 
 export const PowerContainer = styled.div`

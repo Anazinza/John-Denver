@@ -46,11 +46,12 @@ const changeOpacity = keyframes`
 
 export const TextButton = styled.button`
     border: none;
-    background-color: #333333;
+    background-color: transparent;
     outline: none;
     font-size: 23px;
     color: white;
     cursor: pointer;
 
     animation: ${changeOpacity} 5s linear infinite;
+    z-index: 3;
 `

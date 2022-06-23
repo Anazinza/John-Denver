@@ -1,6 +1,7 @@
 import * as S from "./styles"
 import PowerOff from "../../../assets/img/power_off.svg"
 import { useState } from "react"
+import PowerOnContainer from "../PowerOn"
 
 const ConfirmContainer = () => {
     const [power, setPower] = useState<boolean>(false)
@@ -8,7 +9,7 @@ const ConfirmContainer = () => {
     return (
         <div>
             {power ?
-                <div>dd</div>
+                <PowerOnContainer />
                 :
                 <S.ConfirmContainer>
                     <S.Inner>
