@@ -12,3 +12,16 @@ export const playedCDState = atom({
         backgroundColor: "#D9D9D9"
     } as playedCDType
 })
+
+
+interface JungType {
+    id: number;
+    title: string;
+    emotion: string;
+    content: string;
+}
+
+export const jungState = atom({
+    key: "jungState",
+    default: {} as JungType
+})
