@@ -42,7 +42,7 @@ const ReadContainer = () => {
                     readOnly={true}
                 />
             </S.Inner>
-            {Array(10).fill(0).map((_, idx) => (
+            {Array(100).fill(0).map((_, idx) => (
                 <Star key={idx} scale={getRandomAxis()} />
             ))}
         </S.ReadContainer>

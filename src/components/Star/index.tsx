@@ -1,4 +1,5 @@
 import * as S from "./styles"
+import StarImg from "../../assets/img/star.svg"
 
 interface StarPropsType {
     scale: { left: number, top: number }
@@ -10,7 +11,7 @@ const Star = ({ scale }: StarPropsType) => {
 
     return (
         <S.StarContainer top={scale.top} left={scale.left}>
-            dnklsfnsdlfkn
+            <S.StarImg src={StarImg} alt="star image" />
         </S.StarContainer>
     )
 }
