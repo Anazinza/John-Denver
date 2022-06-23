@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const EditorContainer = styled.div`
     .ql-editor {
         min-height: 600px;
+        max-height: 600px;
         font-size: 21px;
 
         &::placeholder {

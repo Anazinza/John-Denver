@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
 
 export const WriteContainer = styled.section`
    width: 100vw;
@@ -28,4 +29,28 @@ export const Input = styled.input`
         color: #CECECE;
         font-size:23px;
     }
+`
+
+export const ButtonContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+`
+
+
+const changeOpacity = keyframes`
+    from { opacity: 0 }
+    50% { opacity: 1 }
+    to { opacity: 0 }
+`
+
+export const NextButton = styled.button`
+    border: none;
+    background-color: #333333;
+    outline: none;
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+
+    animation: ${changeOpacity} 7s linear infinite;
 `
