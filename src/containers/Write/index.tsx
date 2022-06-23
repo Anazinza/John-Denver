@@ -21,7 +21,7 @@ const WriteContainer = () => {
                         <S.Input placeholder="제목을 입력해주세요" />
                         <S.Input placeholder="감정을 입력해주세요" />
                     </S.InputContainer>
-                    <Editor placeholder="내용을 입력해주세요" />
+                    <Editor placeholder="내용을 입력해주세요"  />
                     <S.ButtonContainer>
                         <S.TextButton onClick={() => setClick(true)}>클릭해서 다음단계로</S.TextButton>
                     </S.ButtonContainer>
