@@ -27,6 +27,7 @@ export const WriteBtn = styled.button`
   width: 200px;
   font-weight: bold;
   font-size: 18px;
+  border: none;
   background-color: #333333;
   color: white;
   cursor: pointer;
