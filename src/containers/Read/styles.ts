@@ -9,6 +9,9 @@ export const ReadContainer = styled.section`
 export const Inner = styled.div`
     margin-top: 100px;
     width: 50%;
+    @media (max-width: 1050px) {
+        width: 100%;
+    }
 `
 
 export const Title = styled.div`
