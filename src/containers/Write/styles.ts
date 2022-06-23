@@ -7,8 +7,9 @@ export const WriteContainer = styled.section`
     justify-content: center;
 `
 
-export const Inner = styled.div`
+export const Inner = styled.div<{click: boolean}>`
     width: 70%;
+
 `
 
 export const InputContainer = styled.div`
@@ -44,7 +45,7 @@ const changeOpacity = keyframes`
     to { opacity: 0 }
 `
 
-export const NextButton = styled.button`
+export const TextButton = styled.button`
     border: none;
     background-color: #333333;
     outline: none;
@@ -52,5 +53,5 @@ export const NextButton = styled.button`
     color: white;
     cursor: pointer;
 
-    animation: ${changeOpacity} 7s linear infinite;
+    animation: ${changeOpacity} 5s linear infinite;
 `
