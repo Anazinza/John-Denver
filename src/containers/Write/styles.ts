@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { keyframes } from "@emotion/react";
+import { keyframes, css } from "@emotion/react";
 
 export const WriteContainer = styled.section`
    width: 100vw;
@@ -7,9 +7,8 @@ export const WriteContainer = styled.section`
     justify-content: center;
 `
 
-export const Inner = styled.div<{click: boolean}>`
+export const Inner = styled.div<{ click: boolean }>`
     width: 70%;
-
 `
 
 export const InputContainer = styled.div`
