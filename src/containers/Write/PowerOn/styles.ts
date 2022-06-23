@@ -42,7 +42,7 @@ export const Background = styled.div`
     bottom: 0px;
     width: 100vw;
     height: 100vh;
-    animation: ${pulse} 3s linear;
+    animation: ${pulse} 4s linear;
     background-color: #000000;
     opacity: 60%;
 
