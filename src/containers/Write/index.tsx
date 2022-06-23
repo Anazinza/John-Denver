@@ -1,8 +1,17 @@
 import Editor from "../../components/Editor"
+import * as S from "./styles"
 
 const WriteContainer = () => {
     return (
-        <Editor placeholder="내용을 입력하세요" />
+        <S.WriteContainer>
+            <S.Inner>
+                <S.InputContainer>
+                    <S.Input placeholder="제목을 입력해주세요"/>
+                    <S.Input placeholder="감정을 입력해주세요"/>
+                </S.InputContainer>
+                <Editor placeholder="내용을 입력해주세요" />
+            </S.Inner>
+        </S.WriteContainer>
     )
 }
 
