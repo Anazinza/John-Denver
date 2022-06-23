@@ -31,7 +31,7 @@ export const Cd = styled.div<CdPropsType>`
     `}
 
     ${props => props.animation && css`
-        animation: ${fastSpin} .001s linear infinite;
+        animation: ${fastSpin} 1s linear infinite;
         
         &:hover {
             animation-duration: 5s;
