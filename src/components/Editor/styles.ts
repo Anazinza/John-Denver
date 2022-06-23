@@ -13,15 +13,13 @@ export const EditorContainer = styled.div`
     .ql-container {
         background-color: #333333;
         border: none;
-        border-bottom: 1px solid black;
+        /* border-bottom: 1px solid black; */
     }
 
     .ql-toolbar {
         background: #333333;
         border: none;
-        border-bottom: 1px solid black;
-  /* border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em; */
+        /* border-bottom: 1px solid black; */
 }
 
 `

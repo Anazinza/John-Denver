@@ -10,7 +10,7 @@ interface CdPropsType {
     hover: boolean;
 }
 
-const slowSpin = keyframes`
+const fastSpin = keyframes`
     100% { transform: rotate(-360deg); }
 `
 
@@ -31,10 +31,11 @@ export const Cd = styled.div<CdPropsType>`
     `}
 
     ${props => props.animation && css`
-        animation: ${slowSpin} .001s linear infinite; 
+        animation: ${fastSpin} .001s linear infinite;
         
         &:hover {
-            animation-duration:5s;
+            animation-duration: 5s;
+
         }
     ` }
     
