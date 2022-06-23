@@ -1,6 +1,7 @@
 import * as S from "./styles"
 import { useSetRecoilState } from "recoil"
 import { jungState } from "../../utils/recoil"
+import { useNavigate } from "react-router-dom"
 
 interface propsType {
     id: number;
@@ -11,6 +12,7 @@ interface propsType {
 
 const Jung = ({ id, title, emotion, content }: propsType) => {
     const setJung = useSetRecoilState(jungState)
+    const navigate = useNavigate()
 
     const onOpenJung = () => {
         setJung({
@@ -19,6 +21,8 @@ const Jung = ({ id, title, emotion, content }: propsType) => {
             emotion: emotion,
             content: content
         })
+
+        navigate("/read")
     }
 
     return (

@@ -9,7 +9,6 @@ const PowerOnContainer = () => {
     const [visible, setVisible] = useState<boolean>(false)
     const navigate = useNavigate();
 
-
     useEffect(() => {
         setTimeout(() => {
             setVisible(true)
