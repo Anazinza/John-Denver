@@ -48,3 +48,21 @@ export const Background = styled.div`
 
     z-index: 2;
 `
+
+export const TextContainer = styled.div`
+    position: fixed;
+    z-index: 3;
+    top: 35%;
+`
+
+export const TypingContainer = styled.div`
+    position: fixed;
+    z-index: 3;
+    top: 55%;
+`
+
+export const Text = styled.label`
+    color: white;
+    font-size: 25px;
+    
+`

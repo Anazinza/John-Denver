@@ -17,7 +17,6 @@ const ConfirmContainer = () => {
                             <img src={PowerOff} alt="power off" />
                         </S.PowerContainer>
                         <S.Text>Click power to upload</S.Text>
-
                     </S.Inner>
                 </S.ConfirmContainer>}
         </div>
