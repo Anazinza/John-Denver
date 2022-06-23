@@ -1,24 +1,25 @@
 import * as S from "./styles"
 import PowerOff from "../../../assets/img/power_off.svg"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 const ConfirmContainer = () => {
-    const [animation, setAnimation] = useState<boolean>(false)
-
-    useEffect(() => {
-        setAnimation(true)
-    }, [])
+    const [power, setPower] = useState<boolean>(false)
 
     return (
-        <S.ConfirmContainer>
-            <S.Inner>
-                <S.PowerContainer>
-                    <img src={PowerOff} alt="power off" />
-                </S.PowerContainer>
-                <S.Text>Click power to upload</S.Text>
+        <div>
+            {power ?
+                <div>dd</div>
+                :
+                <S.ConfirmContainer>
+                    <S.Inner>
+                        <S.PowerContainer onClick={() => setPower(true)}>
+                            <img src={PowerOff} alt="power off" />
+                        </S.PowerContainer>
+                        <S.Text>Click power to upload</S.Text>
 
-            </S.Inner>
-        </S.ConfirmContainer>
+                    </S.Inner>
+                </S.ConfirmContainer>}
+        </div>
     )
 }
 

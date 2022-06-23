@@ -11,7 +11,7 @@ const WriteContainer = () => {
             {click ?
                 <div>
                     <S.ButtonContainer>
-                        <S.TextButton onClick={() => setClick(false)}>Move to Previous step</S.TextButton>
+                        <S.TextButton onClick={() => setClick(false)}>Back to write Jung</S.TextButton>
 
                     </S.ButtonContainer>
                     <ConfirmContainer />
