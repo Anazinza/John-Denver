@@ -1,10 +1,12 @@
 import * as S from "./styles"
 import { MdKeyboardArrowUp, MdOutlineArrowLeft, MdOutlineArrowRight } from "react-icons/md";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Dates } from "../../../constant";
 import Cd from "../../../components/Cd";
 import { generateColor } from "../../../utils/generateColor"
 import CdPlayer from "../../../components/CdPlayer";
+import { useQuery } from "@apollo/client";
+import { GET_WRITE_DAY } from "../../../gql";
 
 const CURRENT_YEAR = new Date().getFullYear()
 const CURRENT_MONTH = new Date().getMonth()
@@ -12,6 +14,15 @@ const CURRENT_MONTH = new Date().getMonth()
 const OffContainer = () => {
     const [year, setYear] = useState<number>(CURRENT_YEAR)
     const [month, setMonth] = useState<number>(CURRENT_MONTH + 1)
+
+    const { loading, error, data } = useQuery(GET_WRITE_DAY);
+
+    useEffect(() => {
+        console.log(data);
+    }, [data])
+
+    if (loading) return <div>loading</div>;
+    if (error) return <div>error</div>;
 
     const onMonthNext = () => {
         if (year === CURRENT_YEAR && month > CURRENT_MONTH) {

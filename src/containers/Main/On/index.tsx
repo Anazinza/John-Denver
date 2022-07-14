@@ -3,7 +3,6 @@ import { Jungs } from "../../../constant";
 import Jung from "../../../components/Jung";
 import { useNavigate } from "react-router-dom";
 
-
 const OnContainer = () => {
     const navigate = useNavigate()
 
